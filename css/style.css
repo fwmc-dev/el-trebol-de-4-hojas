@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Chau Philomene One', sans-serif;
+
+}
+
+#miDiv {
+    width: 100%;
+    height: 100vh;
+    background-color: lightblue;
+}
+
+.svg-icon-sm {
+    transform: scale(1.75);
+}
+
+.btn-transparent {
+    background-color: transparent !important;
+    border: none;
+}
+
+/*---------- Nav-Bar ------------*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+
+}
+
+.sub-dropdown {
+    display: none;
+    background-color: #f9f9f9;
+    box-shadow: 8px 8px 16px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 160px;
+    height: 85px;
+    padding: 0px;
+    transform: translateY(65%);
+}
+
+.dropdown-content .sub-dropdown:hover {
+    display: block;
+}
+
+.sub-dropdown-active:hover .sub-dropdown {
+    display: block;
+    top: 0;
+    left: 100%;
+
+    margin-top: -10px;
+}
+
+.form-control:focus,
+input:focus,
+.form-select:focus {
+    border-color: #28a745;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/**sub opcion 3 y 4**/
+
+.sub-dropdown4 {
+    display: none;
+    background-color: #f9f9f9;
+    box-shadow: 8px 8px 16px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 160px;
+    height: 85px;
+    padding: 0px;
+    transform: translateY(170%);
+}
+
+.sub-dropdown-active4:hover .sub-dropdown4 {
+    display: block;
+    top: 0;
+    left: 100%;
+
+    margin-top: -10px;
+}
+
+.dropdown-content .sub-dropdown4:hover {
+    display: block;
+}
+
+.sub-dropdown-active4:hover .sub-dropdown4 {
+    display: block;
+    top: 0;
+    left: 100%;
+}
+
+/*option 3*/
+
+.sub-dropdown3 {
+    display: none;
+    background-color: #f9f9f9;
+    box-shadow: 8px 8px 16px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 160px;
+    height: 85px;
+    padding: 0px;
+    transform: translateY(119%);
+}
+
+.sub-dropdown-active3:hover .sub-dropdown3 {
+    display: block;
+    top: 0;
+    left: 100%;
+    margin-top: -10px;
+}
+
+.dropdown-content .sub-dropdown3:hover {
+    display: block;
+}
+
+.sub-dropdown-active3:hover .sub-dropdown3 {
+    display: block;
+    top: 0;
+    left: 100%;
+    margin-top: -10px;
+}
+
+hr.h-color {
+    background: #eee;
+}
+
+.hola {
+    margin-top: 1px;
+}
+
+.persona {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+/*------- Pagina Principal -----------
+
+.contenedorC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+    width: ;
+}*/
+.anchor_links2 {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    display: block;
+}
+
+.anchor_links {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+    background-color: #00000026;
+    padding: 5px;
+}
+
+.cuadrado {
+    width: auto;
+    height: auto;
+    border-radius: 3px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.slider-container {
+    text-align: center;
+    white-space: nowrap;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 25px;
+}
+
+.container {
+    border: none;
+}
+
+.linea-superior {
+    position: absolute;
+    top: -12px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #8a8a8a;
+}
+
+.no-deco {
+    text-decoration: none;
+    color: black;
+}
+
+.no-deco:hover {
+    text-decoration: underline;
+}
+
+.centrar-boton {
+    text-align: center;
+}
+
+
+.btn {
+    margin: 10px auto;
+}
+
+/*-----------------*/
+
+.carousel-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.carousel-button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.carousel-button.prev {
+    left: 0;
+}
+
+.carousel-button.next {
+    right: 0;
+}
+
+.mainContenedor {
+    max-width: 960px;
+    margin: auto;
+}
+
+/*--------- Apartado de todo el logeo ------------*/
+
+.delate-a {
+    text-decoration: underline;
+    color: black;
+}
+
+input::placeholder {
+    color: #808080c2 !important;
+}
+
+
+/*-----Productos------*/
+
+.select-peque {
+    height: 44px;
+    font-size: 16px;
+}
+
+.linea-in {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid #000;
+    width: 230px;
+}
+
+#size-input {
+    width: 80px;
+    height: 30px;
+}
+
+.size-button {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/*----------------*/
+
+.move {
+    margin-top: -35px;
+}
+
+/*-----Footer------*/
+
+.icono-personalizado {
+    background-color: #2b2b2b;
+    padding: 10px;
+    border-radius: 50%;
+    user-select: none;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+
+/* ------------ Agregar Producto ------------ */
+
+.portada::after {
+    content: "HAZ CLICK PARA AGREGAR UNA IMAGEN";
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000033;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.removePortadaAfter::after{
+    display: none;
+}
